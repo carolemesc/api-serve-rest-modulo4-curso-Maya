@@ -16,3 +16,15 @@ Cadastrar um usuário já existente
     Cadastrar o usuário criado na ServeRest    ${EMAIL_TEST}    201
     Repetir o cadastro do usuário              #aqui eu estou mandando o status 400 (de erro) lá dentro da KW
     Verificar se a API não permitiu o cadastro repetido
+
+Consultar os dados de um novo usuário
+    Criar um usuário novo
+    Cadastrar o usuário criado na ServeRest    ${EMAIL_TEST}    201
+    Consultar os dados do novo usuário
+    Conferir os dados retornados
+
+Logar com o novo usuário criado
+    Criar um usuário novo
+    Cadastrar o usuário criado na ServeRest    ${EMAIL_TEST}    201
+    Realizar Login com o usuário
+    Conferir se o Login ocorreu com sucesso

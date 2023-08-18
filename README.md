@@ -12,5 +12,8 @@ parte de API curso da May Fernandes: https://www.udemy.com/course/automacao-de-t
 - **tests\api_testing_usuarios.robot**: regra de negócio do teste
 - **resources\api_testing_usuarios.resource**: resource
 
+## Link com todas as possíveis respostas para quando usa a lib request:
+- [Properties and Methods](https://www.w3schools.com/python/ref_requests_response.asp)
+    - coloquei alguns exemplos lá na KW `Consultar os dados do novo usuário`
 
 **Para rodar um teste**: `robot -d ./results tests/api_testing_usuarios.robot` ou pelo "run"
